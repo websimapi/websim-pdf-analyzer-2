@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PDF Analyzer</h1>
+    <p>Upload a PDF file to analyze its content page by page using AI.</p>
+    <input type="file" id="pdfInput" accept="application/pdf">
+    <div id="loading" style="display: none;">Loading and Analyzing...</div>
+    <div id="results"></div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "pdfjs-dist/build/pdf.min.mjs": "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.677/pdf.min.mjs"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
